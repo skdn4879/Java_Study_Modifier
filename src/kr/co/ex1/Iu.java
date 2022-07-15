@@ -4,6 +4,9 @@ public class Iu {
 	private String name;
 	private int age;
 	private static Iu iu;	//싱글톤패턴을 위해 멤버변수 static으로 자기자신
+	
+	//Fix-Study 브랜치 테스트
+	private String test;
 
 	private Iu() {}	//생성자를 private로 지정
 	
