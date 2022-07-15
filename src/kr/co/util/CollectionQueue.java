@@ -14,7 +14,7 @@ public class CollectionQueue implements Collection {
 		
 		copyNumbers[0] = addNum;
 		
-		for(int i = 1; i < len; i++) {
+		for(int i = 1; i < len + 1; i++) {
 			copyNumbers[i] = numbers[i - 1];
 		}
 		
