@@ -30,5 +30,6 @@ public class Client {
 	public void buy(Electric electric) {
 		System.out.println("구매 완료\t\t" + "남은 금액 : " + (money - electric.getPrice()) + ", 잔여포인트 : " + (point + electric.getPoint()));
 	} //오버로딩해도된다. 근데 우리가 필요한건 price랑 point인데 부모도 이 멤버를 가지고 있으므로 부모타입으로 선언하면 모든 자식클래스를 매개변수로 받을 수 있다.
+	// 서브타입은 부모타입에 속하기 때문에 가능하다.
 	
 }
