@@ -1,8 +1,9 @@
 package kr.co.zerg;
 
+import kr.co.unit.Attacker;
 import kr.co.unit.Unit;
 
-public class Hydra extends Unit {
+public class Hydra extends Unit implements Attacker {
 
 	@Override
 	public void move() {
@@ -14,5 +15,9 @@ public class Hydra extends Unit {
 	@Override
 	public void attack() {
 		System.out.println("퉤!");
+	}
+	@Override
+	public void strike() {
+		this.attack();
 	}
 }

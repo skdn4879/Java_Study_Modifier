@@ -40,6 +40,8 @@ public class Main {
 		m1.info();
 		//Unit unit = new Unit();	//abstract 키워드가 붙은 클래스는 명시적으로 생성 불가
 		
+		m1.strike();
+		
 	}
 
 }

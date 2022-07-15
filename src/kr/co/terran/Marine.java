@@ -1,8 +1,9 @@
 package kr.co.terran;
 
+import kr.co.unit.Attacker;
 import kr.co.unit.Unit;	//같은 패키지 내에 있으면 import가 필요없지만 Unit은 다른 패키지에 있는 클래스이므로 import해주어야 한다.
 
-public class Marine extends Unit {
+public class Marine extends Unit implements Attacker {
 	
 	private String weapon;
 	
@@ -40,5 +41,11 @@ public class Marine extends Unit {
 		super.info(); //부모의 메소드 그대로
 		System.out.println("Marine Info");
 	}	//@Override가 없어도 오버라이딩된다. 근데 굳이 이렇게;;;;
+
+	@Override
+	public void strike() {
+		System.out.println("싹 박멸이야");
+		this.attack();
+	}
 	
 }
